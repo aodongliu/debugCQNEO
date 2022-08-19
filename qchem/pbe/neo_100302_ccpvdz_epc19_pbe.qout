@@ -1,0 +1,507 @@
+/home/elambros/qchem_mbx/exe/qcprog.exe .neo_100302_ccpvdz_epc19_pbe.qin.155833.qcin.1 ./qchem155833/
+
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 5.4 (devel), Q-Chem, Inc., Pleasanton, CA (2021)
+
+ Yihan Shao,  Zhengting Gan,  E. Epifanovsky,  A. T. B. Gilbert,  M. Wormit,  
+ J. Kussmann,  A. W. Lange,  A. Behn,  Jia Deng,  Xintian Feng,  D. Ghosh,  
+ M. Goldey,  P. R. Horn,  L. D. Jacobson,  I. Kaliman,  T. Kus,  A. Landau,  
+ Jie Liu,  E. I. Proynov,  R. M. Richard,  R. P. Steele,  E. J. Sundstrom,  
+ H. L. Woodcock III,  P. M. Zimmerman,  D. Zuev,  B. Alam,  B. Albrecht,  
+ A. Aldossary,  E. Alguire,  S. A. Baeppler,  D. Barton,  Z. Benda,  
+ Y. A. Bernard,  E. J. Berquist,  K. B. Bravaya,  H. Burton,  K. Carter-Fenk,  
+ D. Casanova,  Chun-Min Chang,  Yunqing Chen,  A. Chien,  K. D. Closser,  
+ M. P. Coons,  S. Coriani,  S. Dasgupta,  A. L. Dempwolff,  M. Diedenhofen,  
+ Hainam Do,  R. G. Edgar,  Po-Tung Fang,  S. Faraji,  S. Fatehi,  
+ Qingguo Feng,  J. Fosso-Tande,  J. Gayvert,  Qinghui Ge,  A. Ghysels,  
+ G. Gidofalvi,  J. Gomes,  J. Gonthier,  S. Gulania,  A. Gunina,  D. Hait,  
+ M. W. D. Hanson-Heine,  S. Hammes-Schiffer,  P. H. P. Harbach,  
+ A. W. Hauser,  M. F. Herbst,  J. E. Herr,  E. G. Hohenstein,  Z. C. Holden,  
+ S. Houck,  Kerwin Hui,  B. C. Huynh,  M. Ivanov,  T.-C. Jagau,  Hyunjun Ji,  
+ B. Kaduk,  K. Khistyaev,  Jaehoon Kim,  P. Klunzinger,  K. Koh,  
+ D. Kosenkov,  L. Koulias,  T. Kowalczyk,  C. M. Krauter,  A. Kunitsa,  
+ Ka Un Lao,  A. Laurent,  K. V. Lawler,  Joonho Lee,  D. Lefrancois,  
+ S. Lehtola,  D. S. Levine,  Yi-Pei Li,  You-Sheng Lin,  Fenglai Liu,  
+ Kuan-Yu Liu,  E. Livshits,  M. Loipersberger,  A. Luenser,  A. Manjanath,  
+ P. Manohar,  E. Mansoor,  S. F. Manzer,  Shan-Ping Mao,  Yuezhi Mao,  
+ N. Mardirossian,  A. V. Marenich,  T. Markovich,  L. A. Martinez-Martinez,  
+ S. A. Maurer,  N. J. Mayhall,  S. C. McKenzie,  J.-M. Mewes,  P. Morgante,  
+ A. F. Morrison,  J. W. Mullinax,  K. Nanda,  T. S. Nguyen-Beck,  
+ R. Olivares-Amaya,  K. J. Oosterbaan,  J. A. Parkhill,  S. K. Paul,  
+ F. Pavosevic,  Zheng Pei,  T. M. Perrine,  F. Plasser,  P. Pokhilko,  
+ S. Prager,  A. Prociuk,  E. Ramos,  B. Rana,  D. R. Rehn,  F. Rob,  
+ E. Rossomme,  M. Scheurer,  M. Schneider,  N. Sergueev,  S. M. Sharada,  
+ S. Sharma,  W. Skomorowski,  D. W. Small,  T. Stauch,  C. J. Stein,  
+ T. Stein,  Yu-Chuan Su,  S. P. Veccham,  Zhen Tao,  A. J. W. Thom,  
+ A. Tkatchenko,  T. Tsuchimochi,  N. M. Tubman,  L. Vogt,  M. L. Vidal,  
+ O. Vydrov,  M. A. Watson,  J. Wenzel,  M. de Wergifosse,  T. A. Wesolowski,  
+ A. White,  J. Witte,  A. Yamada,  Jun Yang,  K. Yao,  S. Yeganeh,  
+ S. R. Yost,  Zhi-Qiang You,  A. Zech,  Igor Ying Zhang,  Xing Zhang,  
+ Yan Zhao,  Ying Zhu,  B. R. Brooks,  G. K. L. Chan,  C. J. Cramer,  
+ M. S. Gordon,  W. J. Hehre,  A. Klamt,  M. W. Schmidt,  C. D. Sherrill,  
+ D. G. Truhlar,  A. Aspuru-Guzik,  R. Baer,  A. T. Bell,  N. A. Besley,  
+ Jeng-Da Chai,  A. E. DePrince, III,  R. A. DiStasio Jr.,  A. Dreuw,  
+ B. D. Dunietz,  T. R. Furlani,  Chao-Ping Hsu,  Yousung Jung,  Jing Kong,  
+ D. S. Lambrecht,  WanZhen Liang,  C. Ochsenfeld,  V. A. Rassolov,  
+ L. V. Slipchenko,  J. E. Subotnik,  T. Van Voorhis,  J. M. Herbert,  
+ A. I. Krylov,  P. M. W. Gill,  M. Head-Gordon
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  B. Austin,  J. Baker,  G. J. O. Beran,  K. Brandhorst,  
+ S. T. Brown,  E. F. C. Byrd,  A. K. Chakraborty,  C.-L. Cheng,  
+ Siu Hung Chien,  D. M. Chipman,  D. L. Crittenden,  H. Dachsel,  
+ R. J. Doerksen,  A. D. Dutoi,  L. Fusti-Molnar,  W. A. Goddard III,  
+ A. Golubeva-Zadorozhnaya,  S. R. Gwaltney,  G. Hawkins,  A. Heyden,  
+ S. Hirata,  G. Kedziora,  F. J. Keil,  C. Kelley,  Jihan Kim,  R. A. King,  
+ R. Z. Khaliullin,  P. P. Korambath,  W. Kurlancheek,  A. M. Lee,  M. S. Lee,  
+ S. V. Levchenko,  Ching Yeh Lin,  D. Liotard,  R. C. Lochan,  I. Lotan,  
+ P. E. Maslen,  N. Nair,  D. P. O'Neill,  D. Neuhauser,  E. Neuscamman,  
+ C. M. Oana,  R. Olson,  B. Peters,  R. Peverati,  P. A. Pieniazek,  
+ Y. M. Rhee,  J. Ritchie,  M. A. Rohrdanz,  E. Rosta,  N. J. Russ,  
+ H. F. Schaefer III,  N. E. Schultz,  N. Shenvi,  A. C. Simmonett,  A. Sodt,  
+ D. Stuck,  K. S. Thanthiriwatte,  V. Vanovschi,  Tao Wang,  A. Warshel,  
+ C. F. Williams,  Q. Wu,  X. Xu,  W. Zhang
+
+ Please cite Q-Chem as follows:
+ Y. Shao et al., Mol. Phys. 113, 184-215 (2015)
+ DOI: 10.1080/00268976.2014.952696
+
+ Q-Chem 5.4.0 for Intel X86 EM64T Linux
+
+ Parts of Q-Chem use Armadillo 9.800.1 (Horizon Scraper).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Fri Aug 19 11:45:43 2022  
+
+Host: tscc-4-40.sdsc.edu
+0
+
+     Scratch files written to ./qchem155833//
+Processing $rem in /home/elambros/qchem_mbx/config/preferences:
+Processing $rem in /home/elambros/.qchemrc:
+
+Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$molecule
+0 1
+ C        0.000000    0.000000   -0.49687143                                     
+ H        0.000000    0.000000   -1.56687143                                    
+ N        0.000000    0.000000    0.64972857 
+$end
+
+$rem
+JOBTYPE=SP
+input_bohr = false
+method = pbe
+basis = cc-pvdz
+neo = true
+neo_epc = epc19
+sym_ignore = 1
+scf_convergence 11
+max_scf_cycles 100
+SCF_ALGORITHM diis
+xc_grid = 000100000302
+$end
+
+$neo_basis
+H    2
+ S   1   1.00                                                                   
+     31.997      1.000000                                                       
+ S   1   1.00                                                                   
+     16.010      1.000000                                                       
+ S   1   1.00                                                                   
+     8.734      1.000000                                                        
+ S   1   1.00                                                                   
+     1.957       1.000000                                                       
+ P   1   1.00                                                                   
+     24.028      1.000000                                                       
+ P   1   1.00                                                                   
+     13.795      1.000000                                                       
+ P   1   1.00                                                                   
+     9.438       1.000000                                                       
+ D   1   1.00                                                                   
+     19.016      1.000000                                                       
+ D   1   1.00                                                                   
+     10.524       1.000000
+****
+$end
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      C       0.0000000000     0.0000000000    -0.4968714300
+    2      H       0.0000000000     0.0000000000    -1.5668714300
+    3      N       0.0000000000     0.0000000000     0.6497285700
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =          24.02226565 hartrees
+ There are        7 alpha and        7 beta electrons
+ Requested basis set is cc-pVDZ
+ There are 15 shells and 33 basis functions
+
+ Total QAlloc Memory Limit   2000 MB
+ Mega-Array Size       188 MB
+ MEM_STATIC part       192 MB
+
+                       Distance Matrix (Angstroms)
+             C (  1)   H (  2)
+   H (  2)  1.070000
+   N (  3)  1.146600  2.216600
+ 
+ A cutoff of  1.0D-14 yielded    120 shell pairs
+ There are       596 function pairs (       675 Cartesian)
+ Smallest overlap matrix eigenvalue = 7.60E-03
+
+ Scale SEOQF with 1.000000e+00/1.000000e+00/1.000000e-01
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =    -0.0000000007 hartrees
+ Guess from superposition of atomic densities
+ Warning:  Energy on first SCF cycle will be non-variational
+ SAD guess density has 14.000000 electrons
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+ Exchange:  PBE      Correlation:  PBE
+ Using Euler-Maclaurin-Lebedev (100,302) quadrature formula
+ A restricted SCF calculation will be
+ performed using DIIS
+ SCF converges when DIIS error is below 1.0e-11
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.4811821770      1.26e-01  
+    2     -93.2669310284      1.80e-02  
+    3     -93.0871558639      4.08e-02  
+    4     -93.2974193424      1.12e-02  
+    5     -93.3142219555      4.23e-04  
+    6     -93.3142501163      1.06e-04  
+    7     -93.3142520720      2.61e-06  
+    8     -93.3142520729      4.29e-07  
+    9     -93.3142520729      2.23e-08  
+   10     -93.3142520729      1.33e-09  
+   11     -93.3142520729      1.77e-10  
+   12     -93.3142520729      1.61e-12  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 3.48s  wall 4.00s 
+ SCF   energy in the final basis set =      -93.3142520729
+ Total energy in the final basis set =      -93.3142520729
+
+ ---------------------------------------
+ Restricted NEO-SCF calculation
+ ---------------------------------------
+ This NEO calculation is using proton isotope
+ Electronic basis set linear dependency threshold: 10E-6.0000000000
+ Nuclear basis set linear dependency threshold: 10E-5.0000000000
+ 2 particle integral threshold: 10E-14
+ Requested basis set is non-standard
+ There are 9 shells and 23 basis functions
+ NEO centers: 2 
+ Number of electronic ao: 33  Number of electronic mo33
+ Number of nuclear ao: 25  Number of nuclear mo24
+ Exchange:  PBE      Correlation:  PBE
+ Using Euler-Maclaurin-Lebedev (100,302) quadrature formula
+ Grid_batch_sz128
+ Dft_grid_thresh 14
+ Grid/integral threshold: 10E-14
+ Read electronic density from eSCF
+ NEO-SCF calculation will be performed using DIIS
+ NEO-SCF Cycles 1
+ Nuclear Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1      18.4552082232      5.03e-15  
+    2      18.4552082232      3.62e-15  
+    3      18.4552082232      3.62e-15  Convergence criterion met
+ Electronic Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.2748916264      9.92e-04  
+    2     -93.2739124637      3.00e-03  
+    3     -93.2750424515      2.69e-04  
+    4     -93.2750516398      4.76e-05  
+    5     -93.2750519613      1.17e-05  
+    6     -93.2750519802      2.51e-07  
+    7     -93.2750519802      1.24e-07  
+    8     -93.2750519802      1.54e-09  
+    9     -93.2750519802      7.07e-11  
+   10     -93.2750519802      1.59e-12  
+   11     -93.2750519802      1.59e-12  Convergence criterion met
+ NEO-SCF Cycles 2
+ Nuclear Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.2880144810      2.63e-03  
+    2     -93.2883505440      2.62e-03  
+    3     -93.2960260577      1.83e-03  
+    4     -93.2923653775      2.37e-03  
+    5     -93.2946365005      2.17e-03  
+    6     -93.2953749165      2.13e-03  
+    7     -93.2951273492      2.15e-03  
+    8     -93.3000554248      1.35e-03  
+    9     -93.3020960596      8.15e-04  
+   10     -93.3021434690      7.79e-04  
+   11     -93.3023066770      7.20e-04  
+   12     -93.3025879822      4.74e-04  
+   13     -93.3027256531      2.97e-04  
+   14     -93.3027131152      3.24e-04  
+   15     -93.3027853841      1.53e-04  
+   16     -93.3027713075      1.98e-04  
+   17     -93.3027909614      1.34e-04  
+   18     -93.3028004734      9.98e-05  
+   19     -93.3028064388      7.95e-05  
+   20     -93.3028116385      9.15e-06  
+   21     -93.3028116929      3.95e-06  
+   22     -93.3028116894      4.39e-06  
+   23     -93.3028117019      1.55e-06  
+   24     -93.3028117041      3.19e-08  
+   25     -93.3028117041      3.19e-08  Convergence criterion met
+ Electronic Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.3030188357      8.74e-04  
+    2     -93.3022473436      2.65e-03  
+    3     -93.3031263557      2.42e-04  
+    4     -93.3031335120      3.49e-05  
+    5     -93.3031336867      8.26e-06  
+    6     -93.3031336962      1.33e-07  
+    7     -93.3031336962      5.02e-08  
+    8     -93.3031336962      3.13e-10  
+    9     -93.3031336962      1.80e-11  
+   10     -93.3031336962      1.10e-12  
+   11     -93.3031336962      1.10e-12  Convergence criterion met
+ NEO-SCF Cycles 3
+ Nuclear Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.3031353065      1.69e-04  
+    2     -93.3031368385      1.65e-04  
+    3     -93.3031666049      7.36e-05  
+    4     -93.3031704362      5.39e-05  
+    5     -93.3031706741      5.15e-05  
+    6     -93.3031735186      1.65e-05  
+    7     -93.3031736155      1.40e-05  
+    8     -93.3031737817      7.23e-06  
+    9     -93.3031738260      2.26e-06  
+   10     -93.3031738290      1.08e-06  
+   11     -93.3031738303      2.64e-07  
+   12     -93.3031738303      2.30e-07  
+   13     -93.3031738303      1.22e-08  
+   14     -93.3031738303      1.22e-08  Convergence criterion met
+ Electronic Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.3031794016      2.30e-04  
+    2     -93.3031143999      7.64e-04  
+    3     -93.3031861928      4.23e-05  
+    4     -93.3031864535      6.34e-06  
+    5     -93.3031864591      1.00e-06  
+    6     -93.3031864592      1.34e-07  
+    7     -93.3031864592      6.60e-09  
+    8     -93.3031864592      4.10e-10  
+    9     -93.3031864592      1.20e-11  
+   10     -93.3031864592      7.99e-13  
+   11     -93.3031864592      7.99e-13  Convergence criterion met
+ NEO-SCF Cycles 4
+ Nuclear Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.3031867493      6.58e-05  
+    2     -93.3031870226      6.39e-05  
+    3     -93.3031914947      2.04e-05  
+    4     -93.3031918449      1.16e-05  
+    5     -93.3031919198      8.91e-06  
+    6     -93.3031919709      5.57e-06  
+    7     -93.3031919925      4.55e-06  
+    8     -93.3031919996      3.39e-06  
+    9     -93.3031920093      6.09e-07  
+   10     -93.3031920093      6.17e-07  
+   11     -93.3031920097      8.03e-08  
+   12     -93.3031920097      8.03e-08  Convergence criterion met
+ Electronic Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.3031931641      1.04e-04  
+    2     -93.3031806895      3.36e-04  
+    3     -93.3031944872      2.45e-05  
+    4     -93.3031945737      2.31e-06  
+    5     -93.3031945744      3.20e-07  
+    6     -93.3031945744      6.06e-08  
+    7     -93.3031945744      4.09e-09  
+    8     -93.3031945744      2.05e-10  
+    9     -93.3031945744      9.89e-12  
+   10     -93.3031945744      9.89e-12  Convergence criterion met
+ NEO-SCF Cycles 5
+ Nuclear Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.3031946380      3.06e-05  
+    2     -93.3031946979      2.97e-05  
+    3     -93.3031956709      8.98e-06  
+    4     -93.3031957458      4.07e-06  
+    5     -93.3031957536      3.36e-06  
+    6     -93.3031957592      2.35e-06  
+    7     -93.3031957644      1.41e-06  
+    8     -93.3031957643      1.48e-06  
+    9     -93.3031957661      2.98e-07  
+   10     -93.3031957662      2.50e-07  
+   11     -93.3031957662      3.38e-08  
+   12     -93.3031957662      3.38e-08  Convergence criterion met
+ Electronic Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.3031960194      4.81e-05  
+    2     -93.3031933462      1.56e-04  
+    3     -93.3031963037      1.17e-05  
+    4     -93.3031963233      1.05e-06  
+    5     -93.3031963235      1.43e-07  
+    6     -93.3031963235      2.79e-08  
+    7     -93.3031963235      1.97e-09  
+    8     -93.3031963235      9.40e-11  
+    9     -93.3031963235      4.89e-12  
+   10     -93.3031963235      4.89e-12  Convergence criterion met
+ NEO-SCF Cycles 6
+ Nuclear Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.3031963374      1.43e-05  
+    2     -93.3031963505      1.39e-05  
+    3     -93.3031965631      4.17e-06  
+    4     -93.3031965797      1.80e-06  
+    5     -93.3031965811      1.53e-06  
+    6     -93.3031965820      1.10e-06  
+    7     -93.3031965832      5.92e-07  
+    8     -93.3031965833      4.51e-07  
+    9     -93.3031965835      1.39e-07  
+   10     -93.3031965835      2.23e-08  
+   11     -93.3031965835      2.23e-08  Convergence criterion met
+ Electronic Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.3031966391      2.25e-05  
+    2     -93.3031960548      7.27e-05  
+    3     -93.3031967013      5.47e-06  
+    4     -93.3031967056      4.93e-07  
+    5     -93.3031967056      6.68e-08  
+    6     -93.3031967056      1.30e-08  
+    7     -93.3031967056      9.22e-10  
+    8     -93.3031967056      4.35e-11  
+    9     -93.3031967056      2.33e-12  
+   10     -93.3031967056      2.33e-12  Convergence criterion met
+ NEO-SCF Cycles 7
+ Nuclear Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.3031967087      6.69e-06  
+    2     -93.3031967115      6.50e-06  
+    3     -93.3031967581      1.95e-06  
+    4     -93.3031967618      8.39e-07  
+    5     -93.3031967622      6.61e-07  
+    6     -93.3031967623      5.16e-07  
+    7     -93.3031967625      2.72e-07  
+    8     -93.3031967626      1.83e-07  
+    9     -93.3031967626      6.47e-08  
+   10     -93.3031967626      6.47e-08  Convergence criterion met
+ Electronic Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.3031967747      1.05e-05  
+    2     -93.3031966473      3.40e-05  
+    3     -93.3031967883      2.55e-06  
+    4     -93.3031967892      2.31e-07  
+    5     -93.3031967892      3.13e-08  
+    6     -93.3031967892      6.10e-09  
+    7     -93.3031967892      4.30e-10  
+    8     -93.3031967892      2.02e-11  
+    9     -93.3031967892      1.09e-12  
+   10     -93.3031967892      1.09e-12  Convergence criterion met
+ NEO-SCF Cycles 8
+ Nuclear Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.3031967899      3.13e-06  
+    2     -93.3031967905      3.04e-06  
+    3     -93.3031968008      9.10e-07  
+    4     -93.3031968017      3.76e-07  
+    5     -93.3031968017      2.75e-07  
+    6     -93.3031968017      2.45e-07  
+    7     -93.3031968018      1.28e-07  
+    8     -93.3031968018      4.26e-08  
+    9     -93.3031968018      4.26e-08  Convergence criterion met
+ Electronic Block
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.3031968045      4.95e-06  
+    2     -93.3031967763      1.60e-05  
+    3     -93.3031968075      1.20e-06  
+    4     -93.3031968077      1.09e-07  
+    5     -93.3031968077      1.47e-08  
+    6     -93.3031968077      2.87e-09  
+    7     -93.3031968077      2.02e-10  
+    8     -93.3031968077      9.48e-12  
+    9     -93.3031968077      9.48e-12  Convergence criterion met
+
+ E(NEO-SCF) = -93.3031968077
+ NEO SCF time:       CPU 89.03s  wall 89.25s 
+
+ ---------------------------------------
+ Electronic Orbital Energies (a.u.)
+ ---------------------------------------
+ Alpha MOs
+  -- Occupied --
+  -14.0102    -9.9401    -0.8383    -0.5291    -0.3198    -0.3198    -0.3197 
+  -- Virtual --
+   -0.0131    -0.0131     0.0329     0.1879     0.4287     0.4287     0.5316     0.6369 
+    0.7075     0.7463     0.7463     0.9564     1.0271     1.0271     1.0424     1.0424 
+    1.3988     1.6495     1.6495     1.8060     1.8060     2.0158     2.4865     2.4865 
+    2.7371     3.0617 
+ ---------------------------------------
+ Nuclear Orbital Energies (a.u.)
+ ---------------------------------------
+  -- Occupied --
+   -0.8718 
+  -- Virtual --
+    0.5415     0.9584     0.9595     0.9595     1.1635     1.1905     1.1905     1.2012 
+    1.2012     1.2109     1.5223     1.5223     1.5311     1.9389     2.1079     2.1106 
+    2.1106     2.1175     2.1175     2.4823     2.4823     2.4880     2.7827 
+ ---------------------------------------
+Archival summary:
+1\1\tscc-4-40.sdsc.edu\SP\ProcedureUnspecified\BasisUnspecified\111\elambros\FriAug1911:47:172022FriAug1911:47:172022\0\\#,ProcedureUnspecified,BasisUnspecified,\\0,1\C\H,1,1.07\N,1,1.1466,2,180\\\@
+
+ Total job time:  93.50s(wall), 92.74s(cpu) 
+ Fri Aug 19 11:47:17 2022
+
+        *************************************************************
+        *                                                           *
+        *  Thank you very much for using Q-Chem.  Have a nice day.  *
+        *                                                           *
+        *************************************************************
+
+
